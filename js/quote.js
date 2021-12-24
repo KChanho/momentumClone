@@ -40,7 +40,7 @@ const companies = [
 
 const title = document.querySelector("#quote span:first-child");
 const description = document.querySelector("#quote span:last-child")
-const todaysCompany = companies[Math.floor(Math.random() * images.length)];
+const todaysCompany = companies[Math.floor(Math.random() * companies.length)];
 
 title.innerText = todaysCompany.title;
 description.innerText = todaysCompany.description;
