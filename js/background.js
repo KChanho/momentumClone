@@ -42,10 +42,8 @@ const colors = [
 },
 ];
 
-const name = document.querySelector("#quote span:first-child");
-const year = document.querySelector("#quote span:last-child");
+const span = document.querySelector("#quote span");
 const chosenColor = colors[Math.floor(Math.random() * colors.length)];
 
 document.body.style.backgroundColor = chosenColor.color;
-name.innerText = chosenColor.name;
-year.innerText = chosenColor.year;
+span.innerText = `${chosenColor.name}, Color of the ${chosenColor.year}`;
